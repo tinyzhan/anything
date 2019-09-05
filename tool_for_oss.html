@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="tool_for_oss.css">
+</head>
+<body>
+  <!-- 侧边导航栏 -->
+    <div id="contain-left-self-container">
+        <div id="contain-left-self"></div>
+    </div>
+
+
+
+    <!-- checkbox -->
+    <div id="main_checkbox" style="display: inline-block;width:18px;height:18px;border: #ccc 1px solid;margin-top:5px">
+        <div  id="main_checkbox_mini" style="margin-left:5px"></div>
+    </div>
+    <div class="i_checkbox" style="display: inline-block;width:18px;height:18px;border: #ccc 1px solid;margin-top:5px">
+        <div class="i_checkbox_mini" style="margin-left:5px"></div>
+    </div>
+    <div class="i_checkbox" style="display: inline-block;width:18px;height:18px;border: #ccc 1px solid;margin-top:5px">
+        <div class="i_checkbox_mini" style="margin-left:5px"></div>
+    </div>
+    <div class="i_checkbox" style="display: inline-block;width:18px;height:18px;border: #ccc 1px solid;margin-top:5px">
+        <div class="i_checkbox_mini" style="margin-left:5px"></div>
+    </div>
+
+    <!-- 下拉框 -->
+    <div id="dropMenu">
+        <button id="btn-drop">
+            <span></span>
+            <span class="triangle" id="span_tool"></span>
+        </button>
+        <ul id="menu_list">  
+          <li id="first_default">11</li>
+          <li>22</li>
+        </ul>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+<script src="tool_for_oss.js"></script>
+<script>
+  let dataJson=[ 
+        {title: "学员", href: "#"}
+      , {title: "老师", href: "#"}
+      , {title: "教材1",
+        children: [{title: "试卷", href: "#"},
+                  {title: "课本", href: "#"},
+                  {title: "课件", href: "#"}]
+          }
+      , {title: "课程", href: "#"}
+      , {title: "教材2",
+        children: [{title: "试卷", href: "#"},
+                  {title: "课本", href: "#"},
+                  {title: "课件", href: "#"}]
+          }
+        , {title: "教材3",
+        children: [{title: "试卷", href: "#"},
+                  {title: "课本", href: "#"},
+                  {title: "课件", href: "#"}]
+          }
+      ];
+      chunya().createContentLeft(dataJson);
+      //chunya().createCheckbox();
+      chunya().createCheckboxAndKeepStatus();
+      chunya().createDropMenu()
+      
+      
+</script>
+</html>

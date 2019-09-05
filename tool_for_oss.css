@@ -1,0 +1,205 @@
+/* 左侧菜单 */
+li{
+  list-style: none;
+}
+#contain-left-self-container{
+    width: 22%;
+    float: left;
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+#contain-left-self{
+    width:100px;
+    margin: 0 auto;
+}
+#contain-left-self a{
+    display: inline-block;
+    width:97px;
+    height:29px;
+    border-radius:6px;
+    text-align:center!important;
+    line-height:29px!important;
+    font-size: 14px;
+    display: inline-block;
+    margin-top:30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400px;
+}
+#contain-left-self a:hover{
+  color:cornflowerblue;
+}
+#contain-left-self a:active{
+  color:#2979C4;
+}
+#contain-left-self a:focus{
+  color:#2979C4
+}
+.select-style{
+    display: inline-block;
+    width:97px;
+    height:29px;
+    background:rgba(41,121,196,1);
+    border-radius:6px;
+    color:#fff!important;
+    text-align:center!important;
+    line-height:29px!important;
+}
+.select-style2{
+    display: inline-block;
+    width:76px!important;
+    height:29px;
+    padding-left:22px!important;
+    background:rgba(41,121,196,1);
+    border-radius:6px;
+    color:#fff!important;
+    text-align:center!important;
+    line-height:29px!important;
+}
+.special{
+    display: inline-block;
+    width:76px!important;
+    height:29px;
+    padding-left:26px!important;
+    border-radius:6px;
+    text-align:center!important;
+    line-height:29px!important;
+}
+.trangile-black-right{
+    margin-right: 14px;
+    margin-top:6px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent rgb(122, 119, 119) transparent transparent;
+    transform: rotate(180deg); /*顺时针旋转90°*/;
+    transition: transform 0.2s ease 0s;
+}
+.trangile-white-bottom{
+    margin-right: 14px;
+    margin-top:10px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    transform: rotate(270deg); /*顺时针旋转90°*/
+  }
+.trangile-white-right{
+    margin-right: 7px;
+    margin-top:6px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    transform: rotate(180deg); /*顺时针旋转90°*/
+    transition: transform 0.2s ease 0s;
+}
+.contain-left-self-focus{
+  color:#2979C4!important;
+}
+.special-container li a{
+    font-size:10px;
+    margin-top:20px;
+}
+
+
+
+/* checkbox */
+.checkedsymbol{
+  width: 5px;
+  height: 10px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  }
+.checked_backgroundcolor{
+    background-color: #3c8dbc;
+    border:#367fa9 1px solid!important;
+}
+
+
+
+
+
+/* 下拉框 */
+#dropMenu{
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  font-size: 13px;
+}
+#btn-drop{
+  display: inline-block;
+  width:120px;
+  height:36px;
+  background:rgba(255,255,255,1);
+  border:1px solid rgba(230,230,230,1);
+  border-radius:6px;
+  position: relative;
+  text-align: center;
+  line-height: 36px;
+  font-size: 13px;
+}
+#btn-drop span:first-child{
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+#menu_list{
+  list-style: none;
+  position: absolute;
+  top:25px;
+  display: none;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 10px 0px rgba(178, 178, 178, 0.35);
+  border-radius:6px;
+}
+#menu_list li{
+  line-height: 36px;
+  cursor: default;
+  margin-left: -40px;
+  text-align: center;         
+  width:120px;
+  height:36px;        
+}
+#menu_list li:last-of-type{
+  border-bottom: none;
+}
+#menu_list li:hover{
+  background:rgba(41,121,196,0.2);
+}
+
+.triangle{
+  display: inline-block;
+  width:0;
+  height: 0;
+  border-top:8px solid #aaa;
+  border-left:6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  right: 17px;
+  top:12px;
+}
+.triangle-top{
+  display: inline-block;
+  width:0;
+  height: 0;         
+  border-left:6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #aaa;
+  position: absolute;
+  right: 17px;
+  top:12px;
+}
+.light_blue{
+    background:rgba(41,121,196,0.2);
+}
