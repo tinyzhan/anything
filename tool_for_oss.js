@@ -111,7 +111,6 @@
           });
         });
     },
-
     createCheckbox:function(){
       $(document).ready(function(){
         let items=$(".i_checkbox");
