@@ -1,11 +1,10 @@
 　(function(w){
   //工厂
-  function chunya(selector, context){
-      return new chunya.fn.init(selector, context);
+  function oss(selector, context){
+      return new oss.fn.init(selector, context);
   }
   //给原型提供一个简写方式
-  chunya.fn = chunya.prototype = {
-    
+  oss.fn = oss.prototype = {
     createContentLeft:function(dataJson){
     function throttle(fun, delay = 500) {
         let last, deferTimer;
@@ -302,11 +301,11 @@
 
 
   
-  //init才是chunya中真正的构造函数
-  let init = chunya.fn.init = function(selector, context){                                
+  //init才是oss中真正的构造函数
+  let init = oss.fn.init = function(selector, context){                                
   };
-  //把构造函数的原型，替换为chunya工厂的原型
-  //这么做的目的是为了实现chunya的插件机制，让外界可以通过chunya方便的进行扩展
-  init.prototype = chunya.fn;
-  w.chunya = chunya;
+  //把构造函数的原型，替换为oss工厂的原型
+  //这么做的目的是为了实现oss的插件机制，让外界可以通过oss方便的进行扩展
+  init.prototype = oss.fn;
+  w.oss = oss;
 }(window));
